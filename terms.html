@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions — IE Creations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --orange: #FF5C00; --yellow: #FFD000; --purple: #7B2FBE;
+      --teal: #00C9A7; --navy: #1B3A5C; --dark: #0E0E0E;
+      --card-bg: #161616; --text: #F5F5F5; --muted: #888;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--text); overflow-x: hidden; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: grid; grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 1rem 5%;
+      background: rgba(14,14,14,0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-brand { justify-self: start; display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .nav-name {
+      font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--orange), var(--yellow));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px;
+    }
+    .nav-links { justify-self: center; display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-right { justify-self: end; }
+    .nav-cta {
+      background: var(--orange); color: #fff; border: none;
+      padding: 0.55rem 1.3rem; border-radius: 50px; font-weight: 600;
+      font-size: 0.88rem; cursor: pointer; text-decoration: none;
+      transition: transform 0.15s, opacity 0.15s;
+    }
+    .nav-cta:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    /* ── PAGE CONTENT ── */
+    .legal-page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 7rem 5% 5rem;
+    }
+    .legal-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--orange); margin-bottom: 1rem;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800; line-height: 1.1; margin-bottom: 0.5rem;
+    }
+    .legal-date {
+      color: var(--muted); font-size: 0.85rem; margin-bottom: 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.07); padding-bottom: 2rem;
+    }
+    h2 {
+      font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700;
+      color: var(--text); margin: 2.5rem 0 0.75rem;
+    }
+    p { color: #ccc; line-height: 1.75; font-size: 0.97rem; margin-bottom: 1rem; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight-box {
+      background: var(--card-bg); border: 1px solid rgba(255,255,255,0.08);
+      border-left: 3px solid var(--orange); border-radius: 8px;
+      padding: 1.25rem 1.5rem; margin: 1.5rem 0;
+    }
+    .highlight-box p { margin: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #080808; border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 2rem 5%; display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-logo {
+      font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 1.2rem;
+      background: linear-gradient(135deg, var(--orange), var(--yellow));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    footer p { color: var(--muted); font-size: 0.82rem; }
+    .footer-legal-links { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+    .footer-legal-links a { color: var(--muted); text-decoration: underline; font-size: 0.82rem; }
+    .footer-legal-links a:hover { color: var(--text); }
+    .footer-slogan { font-size: 0.78rem; color: var(--teal); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+
+    @media (max-width: 600px) {
+      nav { grid-template-columns: 1fr auto; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <span class="nav-name">IE Creations</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#story">Our Story</a></li>
+    <li><a href="index.html#about">About</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<main class="legal-page">
+  <p class="legal-label">Legal</p>
+  <h1>Terms &amp; Conditions</h1>
+  <p class="legal-date">Last updated: September 2026</p>
+
+  <p>By visiting this website or purchasing from IE Creations — whether through this site or our Etsy shop — you agree to the following terms. Please read them carefully.</p>
+
+  <h2>Who We Are</h2>
+  <p>IE Creations is a small handmade goods business based in New York City, founded by Eitan Weinberg and Ilan Davidovsky. We design and produce handmade and 3D-printed items including resin art, Judaica, custom woodwork, and other goods. Our Etsy shop operates under the name <a href="https://www.etsy.com/shop/CreatedbyIEShop" target="_blank">CreatedbyIEShop</a>.</p>
+
+  <h2>Use of This Site</h2>
+  <p>This website is provided for informational purposes — to showcase our work and allow visitors to get in touch with us. You may browse, share, and link to this site for personal, non-commercial purposes. You may not reproduce, scrape, or redistribute the content on this site without our permission.</p>
+
+  <h2>Intellectual Property</h2>
+  <p>All content on this site — including photos, product designs, written descriptions, and the IE Creations name and branding — is owned by IE Creations unless otherwise noted. Our products are original works; copying or reproducing our designs for commercial purposes is not permitted.</p>
+  <div class="highlight-box">
+    <p>If you'd like to use our photos or content for press, editorial, or promotional purposes, please reach out first at <a href="mailto:Eitan@eitanweinberg.com">Eitan@eitanweinberg.com</a>.</p>
+  </div>
+
+  <h2>Orders &amp; Purchases</h2>
+  <p>Orders placed through Etsy are subject to Etsy's Terms of Use in addition to our own policies. For direct orders or commissions placed through this site, the specific terms (timeline, price, and deliverables) will be confirmed with you in writing before we begin work.</p>
+  <p>Prices are listed in USD. We reserve the right to change pricing at any time, but confirmed orders will not be subject to price increases.</p>
+
+  <h2>Handmade Products</h2>
+  <p>Because our products are handmade and/or 3D-printed, they may have slight variations from photos. These variations — in color, texture, or finish — are a natural part of the process and are not considered defects. If something about your order is genuinely wrong, see our <a href="refund.html">Refund Policy</a>.</p>
+
+  <h2>Limitation of Liability</h2>
+  <p>IE Creations is not liable for any indirect, incidental, or consequential damages arising from the use of our products or website. Our total liability for any claim is limited to the amount you paid for the specific item in question.</p>
+  <p>We make no warranties — express or implied — beyond those required by law. We are not responsible for issues caused by misuse, normal wear and tear, or circumstances outside our control.</p>
+
+  <h2>No Data Collection</h2>
+  <p>This website does not use cookies, trackers, or analytics. We do not collect any personal data from visitors. If you contact us via email or through Etsy, the information you share is used only to fulfill your order or respond to your inquiry.</p>
+
+  <h2>Changes to These Terms</h2>
+  <p>We may update these terms from time to time. When we do, the "last updated" date at the top of this page will change. Continued use of the site after an update means you accept the revised terms.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about these terms? Email us at <a href="mailto:Eitan@eitanweinberg.com">Eitan@eitanweinberg.com</a>. We're a small operation and we're happy to talk.</p>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">IE Creations</div>
+  <p>© 2026 IE Creations. NYC &amp; NJ. Handmade with care.<br>
+    <span class="footer-legal-links">
+      <a href="refund.html">Refund Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </span>
+  </p>
+  <div class="footer-slogan">i.e. — We Set the Example</div>
+</footer>
+
+</body>
+</html>

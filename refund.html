@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refund Policy — IE Creations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --orange: #FF5C00; --yellow: #FFD000; --purple: #7B2FBE;
+      --teal: #00C9A7; --navy: #1B3A5C; --dark: #0E0E0E;
+      --card-bg: #161616; --text: #F5F5F5; --muted: #888;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--text); overflow-x: hidden; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: grid; grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 1rem 5%;
+      background: rgba(14,14,14,0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-brand { justify-self: start; display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .nav-name {
+      font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--orange), var(--yellow));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px;
+    }
+    .nav-links { justify-self: center; display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-right { justify-self: end; }
+    .nav-cta {
+      background: var(--orange); color: #fff; border: none;
+      padding: 0.55rem 1.3rem; border-radius: 50px; font-weight: 600;
+      font-size: 0.88rem; cursor: pointer; text-decoration: none;
+      transition: transform 0.15s, opacity 0.15s;
+    }
+    .nav-cta:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    /* ── PAGE CONTENT ── */
+    .legal-page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 7rem 5% 5rem;
+    }
+    .legal-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+      color: var(--orange); margin-bottom: 1rem;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800; line-height: 1.1; margin-bottom: 0.5rem;
+    }
+    .legal-date {
+      color: var(--muted); font-size: 0.85rem; margin-bottom: 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.07); padding-bottom: 2rem;
+    }
+    h2 {
+      font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700;
+      color: var(--text); margin: 2.5rem 0 0.75rem;
+    }
+    p { color: #ccc; line-height: 1.75; font-size: 0.97rem; margin-bottom: 1rem; }
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight-box {
+      background: var(--card-bg); border: 1px solid rgba(255,255,255,0.08);
+      border-left: 3px solid var(--orange); border-radius: 8px;
+      padding: 1.25rem 1.5rem; margin: 1.5rem 0;
+    }
+    .highlight-box p { margin: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #080808; border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 2rem 5%; display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-logo {
+      font-family: 'Space Grotesk', sans-serif; font-weight: 800; font-size: 1.2rem;
+      background: linear-gradient(135deg, var(--orange), var(--yellow));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    footer p { color: var(--muted); font-size: 0.82rem; }
+    .footer-legal-links { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+    .footer-legal-links a { color: var(--muted); text-decoration: underline; font-size: 0.82rem; }
+    .footer-legal-links a:hover { color: var(--text); }
+    .footer-slogan { font-size: 0.78rem; color: var(--teal); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+
+    @media (max-width: 600px) {
+      nav { grid-template-columns: 1fr auto; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <span class="nav-name">IE Creations</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#story">Our Story</a></li>
+    <li><a href="index.html#about">About</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<main class="legal-page">
+  <p class="legal-label">Legal</p>
+  <h1>Refund Policy</h1>
+  <p class="legal-date">Last updated: September 2026</p>
+
+  <p>Everything we make at IE Creations is handmade — built by hand, one piece at a time. Because of the time and materials that go into each item, we handle returns on a case-by-case basis and ask that you read this policy before reaching out.</p>
+
+  <h2>Handmade &amp; 3D-Printed Items</h2>
+  <p>All of our products — resin mezuzahs, shtenders, challah boards, fidget toys, gabbai cards, and other handmade pieces — are made to order or in small batches. Due to the handmade nature of these items, we do not accept returns or exchanges simply because you changed your mind or ordered the wrong size.</p>
+  <p>Small natural variations in color, texture, and finish are normal and expected. They are part of what makes each piece unique, not defects.</p>
+
+  <h2>Custom &amp; Personalized Orders</h2>
+  <p>Custom orders (items made to your specifications, with personalized text, colors, or designs) are <strong>non-refundable</strong>. Once production has begun on a custom piece, we cannot accept cancellations.</p>
+  <p>If you need to make changes to a custom order, contact us as soon as possible. We will do our best to accommodate changes before production starts.</p>
+
+  <h2>Damaged or Defective Items</h2>
+  <div class="highlight-box">
+    <p>If your item arrives damaged, broken, or with a manufacturing defect, we will make it right — either with a replacement or a full refund. Please contact us within <strong>7 days</strong> of delivery with a photo of the damage and your order details.</p>
+  </div>
+  <p>We are not responsible for damage that occurs after delivery, or for items lost or damaged by the carrier after we hand them off. If your order was shipped with insurance, we can help you file a claim with the carrier.</p>
+
+  <h2>Lost Packages</h2>
+  <p>If your package is marked as delivered but you have not received it, please check with neighbors and your local post office first. If the package cannot be located within a few days, contact us and we will work with you to find a solution.</p>
+
+  <h2>Etsy Orders</h2>
+  <p>If you purchased through our <a href="https://www.etsy.com/shop/CreatedbyIEShop" target="_blank">Etsy shop</a>, Etsy's own buyer protection policies also apply. You may open a case through Etsy if we are unable to resolve your issue directly.</p>
+
+  <h2>How to Contact Us</h2>
+  <p>For any questions about your order, email us at <a href="mailto:Eitan@eitanweinberg.com">Eitan@eitanweinberg.com</a>. Please include your order number and a brief description of the issue. We typically respond within 1–2 business days.</p>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">IE Creations</div>
+  <p>© 2026 IE Creations. NYC &amp; NJ. Handmade with care.<br>
+    <span class="footer-legal-links">
+      <a href="refund.html">Refund Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </span>
+  </p>
+  <div class="footer-slogan">i.e. — We Set the Example</div>
+</footer>
+
+</body>
+</html>
