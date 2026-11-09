@@ -141,7 +141,7 @@
     .project-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
     .project-card:hover .card-arrow { opacity: 1; transform: translateX(0); }
     .project-thumb { height: 220px; display: flex; align-items: center; justify-content: center; font-size: 4rem; position: relative; overflow: hidden; }
-    .project-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .project-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
     .project-thumb .thumb-emoji { font-size: 4rem; }
     .thumb-mezuzah { background: linear-gradient(135deg, #3D1A00, #8B4513); }
     .thumb-fidget { background: linear-gradient(135deg, #001A3D, #0055B3); }
@@ -191,7 +191,7 @@
     /* ── PROJECT DETAIL VIEW ── */
     #detail-view { display: none; padding-top: 72px; min-height: 100vh; }
     .detail-hero { position: relative; height: 55vh; min-height: 360px; overflow: hidden; background: #111; }
-    .detail-hero img { width: 100%; height: 100%; object-fit: cover; }
+    .detail-hero img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
     .detail-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(14,14,14,0) 40%, rgba(14,14,14,0.95) 100%); }
     .detail-back {
       position: absolute; top: 1.5rem; left: 5%; z-index: 10;
@@ -546,7 +546,7 @@
 
       <div class="project-card" onclick="showProject('mezuzah')" tabindex="0" role="button" aria-label="View Mezuzahs project" onkeydown="if(event.key==='Enter'||event.key===' ')showProject('mezuzah')">
         <div class="project-thumb thumb-mezuzah">
-          <img src="https://static.wixstatic.com/media/7cc125_0ffd4bb6b8e14350ae786fc16bc49a75~mv2.jpg/v1/fill/w_600,h_440,al_c,q_85,enc_avif,quality_auto/7cc125_0ffd4bb6b8e14350ae786fc16bc49a75~mv2.jpg" alt="Resin and Wood Mezuzahs" loading="lazy" onerror="this.style.display='none'"/>
+          <img src="https://static.wixstatic.com/media/7cc125_5c05291229dc4acaa913b4dbb5cc8a86~mv2.jpg/v1/fill/w_600,h_440,al_c,q_85,enc_avif,quality_auto/7cc125_5c05291229dc4acaa913b4dbb5cc8a86~mv2.jpg" alt="Resin and Wood Mezuzahs" loading="lazy" onerror="this.style.display='none'"/>
         </div>
         <div class="project-body">
           <span class="project-tag tag-resin">Resin · Wood</span>
@@ -770,7 +770,7 @@ const PROJECTS = {
     date: 'Summer 2024 – Present',
     type: 'Personal Project / Small Business',
     location: 'NYC & NJ',
-    cover: WIX + '7cc125_0ffd4bb6b8e14350ae786fc16bc49a75~mv2.jpg/v1/fill/w_1400,h_735,al_c,q_85,enc_avif,quality_auto/7cc125_0ffd4bb6b8e14350ae786fc16bc49a75~mv2.jpg',
+    cover: WIX + '7cc125_5c05291229dc4acaa913b4dbb5cc8a86~mv2.jpg/v1/fill/w_820,h_735,al_c,q_85,enc_avif,quality_auto/7cc125_5c05291229dc4acaa913b4dbb5cc8a86~mv2.jpg',
     description: `<p>Creating with resin has always been something I wanted to try, so I decided to combine that interest with woodworking, which I am adept at. I hand-made mezuzahs using a mix of resin and wood, experimenting with the different combinations of types of wood and colors of resin. This passion project turned into a small business, where I now sell these unique mezuzahs, each one individually unique, with no two alike. Additionally, to keep the scroll from falling out, I 3D printed caps out of TPU, which is a flexible plastic.</p>
 <p>Newly Introducing V2 of my Mezuzot!! All mezuzot are now finished with a custom laser cut ש along with a gloss flood coat to give them all a UV-resistant coating, gloss finish, and long-lasting protection to the elements. If you liked how they looked before, you will love the latest version. Additionally what makes my resin mezuzot unique compared to others found online is that the scroll is kept dry and fully enclosed inside the casing. There is no carving fully open on the back instead I drill a cavity inside the mezuzah that has a sealed cap at the bottom so there is no need to worry about moisture ruining the klaph (scroll with prayer) giving you peace of mind.</p>
 <p>If you would like to purchase one, please reach out. They are available in limited quantities.</p>`,
@@ -779,18 +779,35 @@ const PROJECTS = {
       { label: '📧 Custom Order', href: 'mailto:Eitan@eitanweinberg.com', primary: false }
     ],
     images: [
+      { src: WIX + '7cc125_b4e326d5d3ab4acfb7a6bdf8e937707b~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_d51997277cc84f37995fb3f1c82ada4d~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_141bb7f1bdf04071bb2a530ef1334c46~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_79ddee2c0a1f439dbc9a05d5d5184db8~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_c6c04198bb58455089c77a49cf3aa6ec~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_8d6d1704d3344a8da2ed0c9398ca3be5~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_0f0ed301fe6c474b9450a5ca45c05ae4~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_d0c30f4e54d64acd82778c5de58938d9~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_2393275a6f9d4286b7b9e8101d07375a~mv2.jpg', wide: false },
       { src: WIX + '7cc125_d47bdd8426b243068c42916685868654~mv2.jpg', wide: false },
-      { src: WIX + '7cc125_cfec3e6aaa404b2a81256c3e31371204~mv2.jpg', wide: true },
-      { src: WIX + '7cc125_e0f6256cda8f457cab03d703933b82e0~mv2.jpg', wide: false },
-      { src: WIX + '7cc125_d08432906f184452a9134fb621498a50~mv2.jpg', wide: false },
-      { src: WIX + '7cc125_246b9e6441ae434fb1f7a713ba6ffa4e~mv2.jpg', wide: false },
-      { src: WIX + '7cc125_06de427188f34f5e882932ee1941dd60~mv2.jpg', wide: false },
       { src: WIX + '7cc125_ca69269f0bcb45c8bb0af9fe55f8c97b~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_915b1efa1ec64ef290be7f874dbccc8c~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_246b9e6441ae434fb1f7a713ba6ffa4e~mv2.jpg', wide: false },
       { src: WIX + '7cc125_7b02d5fa87c84dfdb8c9f97c0a2da9b8~mv2.jpg', wide: true },
-      { src: WIX + '7cc125_f272d71efc6a4f708ad19e8481e80d87~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_e0f6256cda8f457cab03d703933b82e0~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_4c09841197084c0ea87330ae7794a29bf000.jpg', wide: false },
+      { src: WIX + '7cc125_06de427188f34f5e882932ee1941dd60~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_d08432906f184452a9134fb621498a50~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_cfec3e6aaa404b2a81256c3e31371204~mv2.jpg', wide: true },
+      { src: WIX + '7cc125_1dd9136d6002462c8dfd1712faf4c9bcf000.jpg', wide: false },
+      { src: WIX + '7cc125_0ffd4bb6b8e14350ae786fc16bc49a75~mv2.jpg', wide: false },
       { src: WIX + '7cc125_62fe4a1e885144b99c80df26ed1d453f~mv2.jpg', wide: false },
-      { src: WIX + '7cc125_516c85e2ae9a4d869efcd8fe144e1ea7~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_d64d02d5c72b4760b1ae5e9cbeccfca0~mv2.jpg', wide: false },
       { src: WIX + '7cc125_464b17c19dfc4bed927bd00d465fc569~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_b7dc393311504674aaede6feabb7b848~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_5dd68329dc3544ea94089f6da77814f2f000.jpg', wide: true },
+      { src: WIX + '7cc125_f42e1c5b24c84203ad191101bc0a4674~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_31715dc388944af8b604f356cd21b57c~mv2.jpg', wide: false },
+      { src: WIX + '7cc125_be0d4e21479c4ac7a2484746e126f6e2~mv2.jpg', wide: true },
     ]
   },
 
