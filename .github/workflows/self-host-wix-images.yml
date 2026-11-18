@@ -1,0 +1,24 @@
+name: Self-host Wix pictures
+
+# One-time job: saves every picture the site still loads from Wix into the "photos" folder
+# and updates index.html to use them. Run it from the Actions tab ("Run workflow").
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  self-host:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download pictures and rewrite index.html
+        run: python3 tools/self_host_wix.py
+      - name: Commit the result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add photos index.html
+          git commit -m "Self-host pictures so the site no longer depends on Wix" || echo "nothing to commit"
+          git push
